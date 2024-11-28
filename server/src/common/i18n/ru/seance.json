@@ -1,0 +1,9 @@
+{
+  "not_found": "Сеанс не найден",
+  "refresh": {
+    "not_valid": "Авторизируйтесь"
+  },
+  "access": {
+    "not_valid": "Access токен не валидный"
+  }
+}

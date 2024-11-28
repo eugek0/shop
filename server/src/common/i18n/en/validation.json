@@ -1,0 +1,19 @@
+{
+  "NOT_EMPTY": "{property} cannot be empty.",
+  "NOT_EMPTY_QUERY": "No query parameters passed, expected {key}.",
+  "NOT_UUID_QUERY": "The query parameter {key} is not UUID.",
+  "NOT_UUID": "{property} is not uuid.",
+  "INVALID_EMAIL": "{property} is invalid",
+  "INVALID_NUMBER": "{property} is not number.",
+  "INVALID_BOOLEAN": "{property} is not a boolean.",
+  "INVALID_ARRAY": "{property} is not a array.",
+  "INVALID_ENUM": "{property} does not meet the enum.",
+  "INVALID_JSON": "{property} is not a  JSON.",
+  "INVALID_DATE": "{property} must be a valid ISO 8601 date string.",
+  "INVALID_PHONE": "{property} phone must be a line in the format +7 (XXX) XXX-XX-XX.",
+  "PASSWORD_NOT_ENOUGH": "Password is not strong enough.",
+  "INVALID_STRING": "{property} must be a string.",
+  "MIN": "{property} with value: \"{value}\" needs to be at least {constraints.0}, ow and {message}",
+  "MAX": "{property} with value: \"{value}\" needs to be less than {constraints.0}, ow and {message}",
+  "CRITICAL_ERROR": "Critical error."
+}

@@ -1,0 +1,6 @@
+{
+  "not_found": "Product not added to cart",
+  "limit": "Sorry, you can only add {maxCount} products at most",
+  "minCount": "The number of items cannot be less than 1",
+  "exist": "Product already added to cart"
+}

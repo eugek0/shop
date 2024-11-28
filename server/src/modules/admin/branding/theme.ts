@@ -1,0 +1,27 @@
+export const theme = {
+  colors: {
+    accent: '#ffffff',
+    love: '#ffffff',
+    grey40: '#505050',
+    primary100: '#1d1d1d',
+    primary80: '#1d1d1d',
+    primary60: '#1d1d1d',
+    primary40: '#1d1d1d',
+    primary20: '#1d1d1d',
+    filterBg: '#505050',
+    border: '#1d1d1d',
+    hoverBg: '#1d1d1d',
+    infoDark: '#ffffff',
+    inputBorder: '#1d1d1d',
+    filterInputBorder: '#1d1d1d',
+    white: '#ffffff',
+    bg: '#ececec',
+  },
+  borders: {
+    input: '1px solid red',
+    filterInput: ' 1px red',
+    bg: '1px solid #1d1d1d',
+    inputFocus: '1px solid #1d1d1d',
+    default: '1px solid #1d1d1d',
+  },
+};

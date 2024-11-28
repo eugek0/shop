@@ -1,0 +1,9 @@
+{
+  "not_found": "Seance not found",
+  "refresh": {
+    "not_valid": "Authorize"
+  },
+  "access": {
+    "not_valid": "Access token is not valid"
+  }
+}

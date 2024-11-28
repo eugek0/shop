@@ -1,0 +1,11 @@
+{
+  "incorrect": "Login or password incorrect",
+  "not_valid_code": "Email or code incorrect",
+  "not_found": "User not found",
+  "not_activated": "Account is not activated",
+  "activated": "Account is activated",
+  "not_valid_password": "Password is not valid",
+  "exist": {
+    "email": "Email already exist"
+  }
+}

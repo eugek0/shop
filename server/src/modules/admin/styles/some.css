@@ -1,0 +1,9 @@
+.sc-guDLRT .adminjs_Box .adminjs_Text section {
+    display: none;
+}
+
+.sc-guDLRT .adminjs_Box form h5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

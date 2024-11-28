@@ -1,0 +1,4 @@
+export const COUNT_MS_IN_SECOND = 1000;
+export const COUNT_MS_IN_MINUTE = 60 * COUNT_MS_IN_SECOND;
+export const COUNT_MS_IN_HOUR = 60 * COUNT_MS_IN_MINUTE;
+export const COUNT_MS_IN_DAY = 24 * COUNT_MS_IN_HOUR;

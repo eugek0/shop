@@ -1,0 +1,19 @@
+{
+  "NOT_EMPTY": "{property} не должно быть пустым.",
+  "NOT_EMPTY_QUERY": "Не переданы query параметры, ожидался {key}.",
+  "NOT_UUID_QUERY": "Query параметр {key} не является UUID.",
+  "NOT_UUID": "{property} не является уникальным id.",
+  "INVALID_EMAIL": "{property} не является почтой.",
+  "INVALID_NUMBER": "{property} не является числом.",
+  "INVALID_BOOLEAN": "{property} не является булевым.",
+  "INVALID_ARRAY": "{property} не является массивом.",
+  "INVALID_ENUM": "{property} не удовлетворяет критериям enum.",
+  "INVALID_JSON": "{property} не является JSON.",
+  "INVALID_DATE": "{property} должна быть действительной строкой даты ISO 8601.",
+  "INVALID_PHONE": "{property} должно быть строкой формата +7 (XXX) XXX-XX-XX.",
+  "PASSWORD_NOT_ENOUGH": "Пароль недостаточно надежен.",
+  "INVALID_STRING": "{property} должно быть строкой.",
+  "MIN": "{property} with value: \"{value}\" needs to be at least {constraints.0}, ow and {message}",
+  "MAX": "{property} with value: \"{value}\" needs to be less than {constraints.0}, ow and {message}",
+  "CRITICAL_ERROR": "Упс... Что-то пошло не так."
+}
