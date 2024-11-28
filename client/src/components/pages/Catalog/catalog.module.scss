@@ -1,0 +1,67 @@
+@import "../../../assets/styles/functions";
+
+.Banner {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+}
+
+.BannerImage {
+  width: 100%;
+  object-fit: cover;
+}
+
+.Title {
+  position: absolute;
+  right: 30%;
+  bottom: 5%;
+  max-width: rem(300);
+  color: $text-white;
+  font-size: rem(78);
+
+  @media (max-width: 760px) {
+    top: 40%;
+    left: 10%;
+    font-size: rem(50);
+  }
+}
+
+.Catalog {
+  padding: rem(60) rem(80) rem(20) rem(80);
+
+  @media (max-width: 1032px) {
+    padding: rem(80) rem(20);
+  }
+}
+
+.Content {
+  max-width: rem(1640);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: rem(80);
+}
+
+.Group {
+  width: rem(752);
+  height: rem(1080);
+  display: flex;
+  justify-content: center;
+  gap: rem(80);
+  flex-wrap: wrap;
+
+  @media (max-width: 1032px) {
+    height: 100%;
+  }
+}
+
+.RowItems {
+  display: flex;
+  justify-content: space-between;
+  gap: rem(40);
+  flex-wrap: wrap;
+
+  @media (max-width: 1824px) {
+justify-content: center;
+  }
+}

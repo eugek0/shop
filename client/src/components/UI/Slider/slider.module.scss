@@ -1,0 +1,33 @@
+@import "src/assets/styles/functions";
+
+.Slider {
+  width: 100%;
+  ul {
+    width: fit-content;
+    bottom: rem(20);
+    left: rem(24);
+    li {
+      button {
+        &::before {
+          font-size: rem(12) !important;
+        }
+      }
+    }
+  }
+}
+
+.Images {
+  max-width: 50%;
+  margin: auto;
+  object-fit: cover;
+
+  @media (max-width: 400px) {
+    max-width: 100%;
+  }
+}
+
+.Slide {
+  position: relative;
+  outline: none;
+  background: $bg-gray;
+}

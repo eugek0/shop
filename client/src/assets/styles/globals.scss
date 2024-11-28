@@ -1,0 +1,69 @@
+@import url('https://fonts.cdnfonts.com/css/mustica-pro-sans-serif');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: auto;
+  font-family: 'Mustica Pro Sans Serif', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+  &::-webkit-scrollbar-thumb {
+    background: #9A9A9A;
+    border-radius: 27px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #282828;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  letter-spacing: 0.125rem;
+  color: #1d1d1d;
+
+  &::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #9A9A9A;
+    border-radius: 27px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #e6e6e6;
+  }
+
+  &::-webkit-scrollbar-track:horizontal {
+    background-color: transparent;
+  }
+}
+
+button, input {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+#__next {
+  overflow: hidden;
+}
+
+.toast {
+  font-family: 'Mustica Pro Sans Serif', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif !important;
+}

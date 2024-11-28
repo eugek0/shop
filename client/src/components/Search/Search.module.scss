@@ -1,0 +1,74 @@
+@import "src/assets/styles/functions";
+
+.Search {
+  height: 100%;
+  padding: rem(120) 0 0 0;
+
+  @media (max-width: $mobile-size) {
+    padding: 0;
+  }
+
+  .Field {
+    width: 80%;
+    margin-left: rem(20);
+
+    @media (min-width: 991px) {
+      margin-left: rem(40);
+      width: 60%;
+      font-size: rem(60);
+    }
+
+    input {
+      &:focus, &:not([value=""]) {
+        ~ span {
+          @media (min-width: 991px) {
+            font-size: rem(28) !important;
+            transform: translateY(rem(-54)) !important;
+          }
+        }
+      }
+    }
+
+    span {
+      color: $text-gray-200;
+
+      @media (min-width: 991px) {
+        font-size: rem(60) !important;
+      }
+    }
+  }
+}
+
+.Content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: $mobile-size) {
+    gap: rem(20);
+  }
+}
+
+.Catalog {
+  padding: rem(40);
+  overflow: auto;
+  display: flex;
+  flex-grow: 1;
+  gap: rem(80);
+
+  &::-webkit-scrollbar {
+    width: 4px;
+    height: 8px;
+  }
+
+  @media (max-width: $mobile-size) {
+    padding: 0 rem(20) rem(160) rem(20);
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: rem(40);
+
+    &::-webkit-scrollbar-track {
+      background-color: $text-gray-200;
+    }
+  }
+}

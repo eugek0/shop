@@ -1,0 +1,49 @@
+@import "src/assets/styles/functions";
+
+.ProductPage {
+  padding-top: rem(100);
+  padding-bottom: rem(80);
+
+  .ProductBreadCrumbs {
+    @media (max-width: 1680px) {
+      padding-left: rem(40);
+    }
+
+    @media (max-width: 500px) {
+      padding: 0 rem(20);
+    }
+  }
+}
+
+.Content {
+  display: flex;
+  flex-direction: column;
+  gap: rem(80);
+}
+
+.BaseInfo {
+  display: flex;
+  gap: rem(60);
+
+  @media (max-width: 1420px) {
+    flex-direction: column;
+  }
+}
+
+.TitleContainer {
+  padding: 0 rem(40);
+
+  @media (max-width: 500px) {
+    padding: 0 rem(20);
+  }
+}
+
+.Subtitle {
+  font-size: rem(12);
+  font-weight: 600;
+}
+
+.Title {
+  font-size: rem(50);
+  font-weight: 600;
+}

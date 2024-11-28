@@ -1,0 +1,67 @@
+@import "src/assets/styles/functions";
+
+.SupportContainer {
+  display: flex;
+  align-items: center;
+  gap: rem(16);
+}
+
+.SupportText {
+  display: flex;
+  flex-direction: column;
+  gap: rem(4);
+  text-align: right;
+}
+
+.SupportSubtitle {
+  color: $text-gray-500;
+  font-size: rem(14);
+}
+
+.SupportTitle {
+  font-size: rem(18);
+}
+
+.SupportImageContainer {
+  position: relative;
+  width: rem(80);
+  height: rem(80);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  &:hover {
+    .SupportTextImage {
+      path {
+        fill: $text-bronze;
+      }
+    }
+    .SupportImage {
+      path {
+        fill: $text-bronze;
+        stroke: $text-bronze;
+      }
+    }
+  }
+}
+
+.SupportImage, .SupportTextImage {
+  path {
+    transition: 0.3s;
+  }
+}
+
+.SupportTextImage {
+  position: absolute;
+  animation: 24s spin infinite linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

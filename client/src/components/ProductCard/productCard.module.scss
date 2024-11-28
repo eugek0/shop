@@ -1,0 +1,157 @@
+@import "src/assets/styles/functions";
+
+.ProductCard_small, .ProductCard_large {
+  display: flex;
+  flex-direction: column;
+  gap: rem(34);
+  cursor: pointer;
+  transition: 0.3s;
+
+  .HeartIcon {
+    position: absolute;
+    padding: rem(8);
+    top: rem(4);
+    right: rem(4);
+    z-index: 1;
+
+    path {
+      fill: transparent;
+    }
+
+    &:hover, &:focus {
+      path {
+        stroke: $bg-bronze;
+      }
+    }
+  }
+
+  .Favorite {
+    path {
+      fill: $red-rose;
+      stroke: $red-rose;
+    }
+
+    &:hover, &:focus {
+      path {
+        fill: $bg-bronze;
+      }
+    }
+  }
+
+  .Subtitle, .Text, .Price, .Image {
+    transition: 0.3s;
+  }
+
+  &:hover, &:focus {
+    outline: none;
+    transform: translateY(-6px);
+
+    .Subtitle, .Text, .Price {
+      color: $text-bronze;
+    }
+  }
+}
+
+.ImageContainer {
+  position: relative;
+}
+
+.InfoContainer {
+  z-index: 2;
+}
+
+.PriceBox {
+  display: flex;
+  align-items: center;
+  gap: rem(8);
+}
+
+.Price {
+  font-size: rem(20);
+}
+
+.OldPrice {
+  color: $text-gray-500;
+  white-space: nowrap;
+  text-decoration: line-through;
+}
+
+.Subtitle {
+  text-transform: uppercase;
+}
+
+.BackgroundImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.Image {
+  object-fit: contain;
+  background: $bg-gray;
+}
+
+.ProductCard_small {
+  min-width: rem(336);
+  width: rem(336);
+  height: rem(500);
+
+  .Image {
+    width: rem(336);
+    height: rem(320);
+  }
+
+  .InfoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: end;
+    gap: rem(8);
+    font-weight: 600;
+  }
+
+  .Subtitle {
+    font-size: rem(10);
+    letter-spacing: rem(2.25);
+    margin-bottom: rem(8);
+  }
+
+  .Text {
+    font-size: rem(20);
+  }
+}
+
+.ProductCard_large {
+  position: relative;
+  width: rem(752);
+  height: rem(1080);
+
+  .Image {
+    width: rem(752);
+    height: rem(640);
+  }
+
+  .InfoContainer {
+    position: absolute;
+    top: rem(670);
+    left: rem(120);
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+  }
+
+  .Subtitle {
+    font-size: rem(10);
+    letter-spacing: rem(2.25);
+  }
+
+  .Text {
+    font-size: rem(50);
+    line-height: rem(60);
+    margin-bottom: rem(8);
+  }
+
+  .Price {
+    margin-top: rem(8);
+  }
+}

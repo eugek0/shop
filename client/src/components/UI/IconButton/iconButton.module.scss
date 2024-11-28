@@ -1,0 +1,82 @@
+@import "src/assets/styles/functions";
+
+.IconButton {
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  line-height: 1rem;
+  outline: none;
+
+  path, line, span {
+    transition: 0.3s;
+  }
+
+  span {
+    padding: rem(3) 0;
+    border-bottom: rem(2) solid transparent;
+  }
+}
+
+.DefaultFill {
+  &:disabled {
+    cursor: default;
+
+    path {
+      fill: $text-gray-400;
+    }
+
+    span {
+      pointer-events: none;
+      color: $text-gray-400;
+    }
+
+    &:hover, &:focus {
+      path {
+        fill: $text-gray-400;
+      }
+
+      span {
+        pointer-events: none;
+        color: $text-gray-400;
+        border-bottom: 2px solid transparent;
+      }
+    }
+  }
+
+  &:hover, &:focus {
+    path {
+      fill: $text-bronze;
+    }
+
+    span {
+      padding: rem(3) 0;
+      border-bottom: rem(2) solid $border-black;
+    }
+
+    line {
+      stroke: $text-bronze;
+    }
+  }
+}
+
+.StrokePath {
+  &:disabled {
+    cursor: default;
+
+    path {
+      stroke: $text-gray-400;
+    }
+  }
+
+  &:hover, &:focus {
+    path {
+      stroke: $text-bronze;
+    }
+
+    line {
+      stroke: $text-bronze;
+    }
+  }
+}

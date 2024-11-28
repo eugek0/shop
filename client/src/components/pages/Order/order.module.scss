@@ -1,0 +1,116 @@
+@import "../../../assets/styles/functions";
+
+.OrderPage {
+  @media (max-width: 900px) {
+    padding: 0 !important;
+    height: 100vh;
+  }
+}
+
+.Content {
+  height: fit-content;
+  padding: rem(18) rem(38);
+  display: flex;
+  flex-direction: column;
+  gap: rem(24);
+  font-size: rem(24);
+  line-height: rem(38.5);
+  background: $bg-gray-lighten;
+  margin-bottom: rem(20);
+
+  @media (max-width: 900px) {
+    background: $bg-white;
+    padding: 0 rem(20) rem(60) rem(20);
+    margin-bottom: rem(90);
+    max-height: none;
+    overflow: auto;
+  }
+
+  @media (max-width: 700px) {
+    margin-bottom: rem(110);
+  }
+
+  @media (max-width: 480px) {
+    margin-bottom: rem(90);
+  }
+}
+
+.OrderId {
+  font-size: rem(24);
+
+  @media (max-width: 700px) {
+    font-size: rem(18);
+  }
+}
+
+.BaseInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: rem(12);
+}
+
+.InfoItem {
+  display: flex;
+  gap: rem(16);
+  font-size: rem(18);
+  text-transform: lowercase;
+
+  @media (max-width: 700px) {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+.InfoTitle {
+  color: $text-gray-500;
+}
+
+.ImagesContainer {
+  min-height: rem(132);
+  display: flex;
+  gap: rem(14);
+  padding-bottom: rem(12);
+  overflow-x: auto;
+}
+
+.ImageContainer {
+  position: relative;
+}
+
+.Image {
+  min-width: rem(116);
+  object-fit: cover;
+  background: $bg-gray;
+}
+
+.Table {
+  font-size: rem(16);
+  line-height: rem(25.5);
+
+  span {
+    white-space: nowrap;
+  }
+
+  div {
+    &:last-child {
+      span {
+        color: $text-bronze
+      }
+    }
+  }
+}
+
+.FinalPriceContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.FinalText {
+  font-size: rem(16);
+}
+
+.FinalPrice {
+  font-size: rem(26);
+}

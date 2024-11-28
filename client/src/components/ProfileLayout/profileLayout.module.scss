@@ -1,0 +1,207 @@
+@import "src/assets/styles/functions";
+
+.ProfileLayout {
+  min-height: calc(100vh - 120px);
+  display: flex;
+  flex-direction: column;
+  gap: rem(20);
+  overflow: hidden;
+
+  @media (max-width: $mobile-size) {
+    min-height: calc(100vh - 60px);
+  }
+
+  @media (max-width: 900px) {
+    gap: 0;
+    height: 100%;
+  }
+
+  @media (max-width: 480px) {
+    gap: 0;
+  }
+}
+
+.Content {
+  width: 100%;
+  padding: 0 rem(60);
+  display: flex;
+  justify-content: space-between;
+  gap: rem(120);
+
+  @media (max-width: 1320px) {
+    padding: 0 rem(10);
+    gap: rem(60);
+  }
+
+  @media (max-width: $mobile-size) {
+    gap: rem(20);
+    padding-bottom: rem(40);
+  }
+
+  @media (max-width: 900px) {
+    padding: 0 0 rem(40) 0;
+    height: 100%;
+  }
+}
+
+.Top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: 900px) {
+    padding: 0 rem(20);
+  }
+
+  @media (max-width: 480px) {
+    justify-content: flex-end;
+  }
+}
+
+.FullWidth {
+  flex-grow: 1;
+}
+
+.Container {
+  position: relative;
+  min-width: rem(350);
+
+  &:last-child {
+    max-width: rem(350);
+  }
+
+  @media (max-width: 1220px) {
+    min-width: rem(250);
+
+    &:last-child {
+      max-width: rem(250);
+    }
+  }
+
+  @media (max-width: 900px) {
+    &:last-child {
+      display: none;
+    }
+  }
+
+  @media (max-width: 570px) {
+    min-width: rem(200);
+
+    &:first-child {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+.TitleWrapper {
+  height: rem(90);
+
+  @media (max-width: 900px) {
+    height: fit-content;
+    padding: 0 rem(20);
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.Title {
+  font-size: rem(36);
+  text-transform: uppercase;
+
+  @media (max-width: 570px) {
+    font-size: rem(28);
+  }
+
+  @media (max-width: 480px) {
+    font-size: rem(24);
+  }
+}
+
+.UserBlock {
+  height: rem(90);
+  display: flex;
+  align-items: center;
+  gap: rem(32);
+
+  @media (max-width: 500px) {
+    gap: rem(16);
+  }
+}
+
+.UserAvatar {
+  height: rem(85);
+  min-width: rem(85);
+  border-radius: 100%;
+  background: $bg-gray;
+}
+
+.Name {
+  font-size: rem(20);
+  text-transform: uppercase;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  @media (max-width: 500px) {
+    font-size: rem(16);
+  }
+}
+
+.Nav {
+  padding-top: rem(50);
+  display: flex;
+  flex-direction: column;
+  gap: rem(20);
+}
+
+.NavButton {
+  padding: rem(7) 0;
+  justify-content: left;
+  font-size: rem(12);
+  text-transform: uppercase;
+}
+
+.BurgerButton {
+  display: none;
+  @media (max-width: 900px) {
+    display: block;
+  }
+
+  @media (max-width: 480px) {
+    padding: rem(16) 0;
+  }
+}
+
+.ProfileDrawer {
+  max-width: rem(400);
+  padding-top: rem(24);
+  padding-right: rem(24);
+  gap: rem(16);
+
+  @media (max-width: 500px) {
+    padding: rem(24);
+    max-width: rem(300);
+  }
+}
+
+.ProfileBreadCrumbs {
+  @media (max-width: 900px) {
+    padding: rem(20) 0;
+  }
+
+  @media (max-width: 480px) {
+    display: none;
+  }
+}
+
+.Children {
+  width: 100%;
+
+  @media (max-width: 900px) {
+    padding: rem(16) 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+}

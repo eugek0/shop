@@ -1,0 +1,16 @@
+@import "src/assets/styles/functions";
+
+.BreadCrumbs {
+  padding: rem(24) 0;
+  display: flex;
+  align-items: center;
+}
+
+.BreadCrumbButton {
+  padding: rem(6);
+  text-align: left;
+}
+
+.Indent {
+  user-select: none;
+}

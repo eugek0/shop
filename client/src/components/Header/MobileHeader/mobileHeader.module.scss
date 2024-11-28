@@ -1,0 +1,50 @@
+@import "src/assets/styles/functions";
+
+.Header {
+  position: fixed;
+  bottom: 0;
+  max-height: rem(60);
+  width: 100vw;
+  padding: 0 rem(20);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: $bg-white;
+  z-index: 10;
+  transition: 1s;
+  border-top: rem(1) solid $border-gray;
+
+  @media (max-width: 450px) {
+    padding: 0;
+  }
+}
+
+.Content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Logo {
+  padding: rem(10) 0;
+
+}
+
+.NavSvg {
+  padding: rem(18);
+
+  @media (max-width: 400px) {
+    padding: rem(18);
+  }
+}
+
+.NavSvg, .Logo {
+  min-height: rem(60);
+  max-height: rem(60);
+  min-width: rem(60);
+
+  @media (max-width: 400px) {
+    min-height: rem(60);
+    min-width: rem(60);
+  }
+}

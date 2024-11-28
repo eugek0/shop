@@ -1,0 +1,12 @@
+@import "../../../../assets/styles/functions";
+
+.Filter {
+  max-width: rem(820);
+  width: 100%;
+  padding: rem(40) rem(20) 0 rem(20);
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: rem(16);
+}

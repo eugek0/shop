@@ -1,0 +1,28 @@
+@import "src/assets/styles/functions";
+
+.Device {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: rem(24);
+
+  @media (max-width: 600px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.Text {
+  display: flex;
+  align-items: center;
+}
+
+.DisplayNone {
+  @media (max-width: 600px) {
+    display: none;
+  }
+}
+
+.CloseButton {
+  padding: rem(2) 0;
+}

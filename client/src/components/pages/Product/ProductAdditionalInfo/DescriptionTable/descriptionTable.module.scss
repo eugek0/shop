@@ -1,0 +1,41 @@
+@import "src/assets/styles/functions";
+
+.TableOfContents {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: rem(8);
+  border-collapse: collapse;
+}
+
+.Item {
+  width: 100%;
+  display: flex;
+}
+
+.LeftGroup {
+  width: 100%;
+  display: flex;
+  min-width: 150px;
+}
+
+.Heading {
+  width: fit-content;
+  white-space: nowrap;
+  text-align: left;
+  color: $text-gray-500;
+}
+
+.Border {
+  width: 100%;
+  height: rem(18);
+  border-bottom: rem(2) dotted $text-gray-400;
+}
+
+.Description {
+  width: fit-content;
+  padding-left: rem(4);
+  white-space: pre-wrap;
+  text-align: right;
+  text-transform: lowercase;
+}

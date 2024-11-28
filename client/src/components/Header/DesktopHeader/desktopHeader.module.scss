@@ -1,0 +1,85 @@
+@import "../../../assets/styles/functions";
+
+.Header_white, .Header_transparent {
+  position: fixed;
+  height: rem(100);
+  width: 100vw;
+  padding: 0 rem(140);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid $border-white;
+  z-index: 10;
+  transition: 1s;
+
+  .Logo {
+    transition: 1s;
+  }
+
+  @media (max-width: 1220px) {
+    padding: 0 rem(20);
+  }
+}
+
+.Header_white {
+  background: $bg-white;
+
+  .Logo, .NavSvg {
+    fill: $text-black;
+  }
+}
+
+.Header_transparent {
+  background: transparent;
+
+  .Logo, .NavSvg {
+    fill: $text-white;
+  }
+}
+
+.Content {
+  position: relative;
+  width: 100%;
+  padding-top: rem(24);
+  padding-bottom: rem(10);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.MenuContainer {
+  display: flex;
+  align-items: center;
+  gap: rem(8);
+}
+
+.Logo {
+  flex-grow: 1;
+  grid-column: 2 / 3;
+  justify-self: center;
+
+  &:hover {
+    transform: scale(1.05, 1.05);
+  }
+}
+
+.Navigation {
+  display: flex;
+  gap: rem(32);
+  grid-column: 3 / 3;
+  justify-self: flex-end;
+}
+
+.BottomNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: rem(70);
+
+  .NavButton {
+    line-height: rem(40);
+    padding: 0;
+    background: transparent;
+    text-transform: lowercase;
+  }
+}

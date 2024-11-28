@@ -1,0 +1,157 @@
+@import "src/assets/styles/functions";
+
+.BackgroundShow, .BackgroundHide {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  transition: 0.4s;
+}
+
+.BackgroundShow {
+  animation: 0.4s showBackground;
+}
+
+.BackgroundHide {
+  opacity: 0;
+}
+
+.Drawer {
+  position: absolute;
+  top: 0;
+  padding: rem(48);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: rem(32);
+  background: #ffffff;
+  transition: 0.4s;
+
+  @media (max-width: rem(500)) {
+    padding: rem(36) rem(20);
+  }
+}
+
+.DrawerShow_left, .DrawerShow_right, .DrawerShow_top, .DrawerShow_bottom {
+  transform: translate(0, 0);
+}
+
+.DrawerShow_left {
+  left: 0;
+  animation: 0.4s showDrawerLeft;
+}
+
+.DrawerShow_top, .DrawerShow_bottom {
+  width: 100%;
+  height: 100%;
+  animation: 0.4s showDrawerTop;
+}
+
+.DrawerShow_top, .DrawerShow_bottom {
+  animation: 0.4s showDrawerTop;
+}
+
+.DrawerShow_right {
+  right: 0;
+  animation: 0.4s showDrawerRight;
+}
+
+.DrawerHide_left {
+  transform: translateX(-100%)
+}
+
+.DrawerHide_top {
+  transform: translateY(-100%)
+}
+
+.DrawerHide_right {
+  transform: translateX(100%);
+  right: 0;
+}
+
+.DrawerHide_bottom {
+  transform: translateY(100%)
+}
+
+.Head {
+  display: flex;
+  justify-content: space-between;
+  gap: rem(32);
+
+  .Title {
+    font-size: rem(28);
+    transform: translateY(rem(-8));
+
+    @media (max-width: 500px) {
+      font-size: rem(18);
+    }
+  }
+
+  .CloseIcon {
+    cursor: pointer;
+    transform: translate(rem(-8), rem(-8));
+  }
+}
+
+.Content {
+  height: 100%;
+}
+
+@keyframes showBackground {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes showDrawerLeft {
+  0% {
+    transform: translateX(-100%)
+  }
+
+  100% {
+    transform: translate(0, 0);
+    left: 0;
+  }
+}
+
+@keyframes showDrawerTop {
+  0% {
+    transform: translateY(-100%)
+  }
+
+  100% {
+    transform: translate(0, 0);
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@keyframes showDrawerBottom {
+  0% {
+    transform: translateY(100%)
+  }
+
+  100% {
+    transform: translate(0, 0);
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@keyframes showDrawerRight {
+  0% {
+    transform: translateX(100%);
+    right: 0;
+  }
+
+  100% {
+    right: 0;
+  }
+}

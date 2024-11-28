@@ -1,0 +1,65 @@
+@import "src/assets/styles/functions";
+
+.Container {
+  position: relative;
+  padding: rem(4);
+  border: rem(1) solid $border-black;
+  min-width: rem(16);
+  height: rem(16);
+  cursor: pointer;
+  background: #ffffff;
+}
+
+.Checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: rem(14);
+  height: rem(14);
+  margin: 0;
+  z-index: 10;
+  visibility: hidden;
+}
+
+.Checked {
+  width: 100%;
+  height: 100%;
+  background: $bg-black;
+}
+
+.Hidden {
+  width: 0;
+  height: 0;
+  animation: hiddenSelectedIcon 0.3s;
+  transform: translate(100%, 100%);
+}
+
+.Show {
+  animation: showSelectedIcon 0.3s;
+}
+
+@keyframes showSelectedIcon {
+  0% {
+    width: 0;
+    height: 0;
+    transform: translate(100%, 100%);
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes hiddenSelectedIcon {
+  0% {
+    width: 100%;
+    height: 100%;
+    transform: translate(0, 0);
+  }
+  100% {
+    width: 0;
+    height: 0;
+    transform: translate(100%, 100%);
+  }
+}

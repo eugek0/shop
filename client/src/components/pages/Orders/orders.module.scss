@@ -1,0 +1,33 @@
+@import "../../../assets/styles/functions";
+
+.OrdersPage {
+  @media (max-width: 900px) {
+    height: 100vh;
+    padding: 0;
+  }
+}
+
+.Content {
+  max-height: rem(600);
+  padding-right: rem(16);
+  padding-bottom: rem(16);
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: rem(20);
+
+  @media (max-width: 900px) {
+    padding: 0 rem(20) rem(60) rem(20);
+    margin-bottom: rem(140);
+    max-height: none;
+    overflow: auto;
+  }
+
+  @media (max-width: 570px) {
+    margin-bottom: rem(120);
+  }
+
+  @media (max-width: 480px) {
+    margin-bottom: rem(90);
+  }
+}

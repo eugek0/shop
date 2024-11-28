@@ -1,0 +1,164 @@
+@import "src/assets/styles/functions";
+
+.FavoritesCard {
+  min-height: rem(133);
+  display: flex;
+  gap: rem(80);
+  cursor: pointer;
+  outline: none;
+  transition: 0.3s;
+
+  &:hover, &:focus {
+
+    .Image {
+      transform: scale(1.05, 1.05);
+    }
+
+    .Motive, .Title, .Price, .Volume {
+      color: $text-bronze;
+    }
+  }
+
+  @media (max-width: 1050px) {
+    gap: rem(40);
+  }
+
+  @media (max-width: 570px) {
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: rem(20);
+    min-height: rem(400);
+  }
+}
+
+.ImageContainer {
+  position: relative;
+  min-width: rem(208);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $bg-gray;
+
+  @media (max-width: 570px) {
+    min-width: rem(310);
+    height: rem(200);
+    width: 100%;
+  }
+
+  @media (max-width: 310px) {
+    min-width: rem(236);
+    height: rem(200);
+    width: 100%;
+  }
+}
+
+.Image {
+  transition: 0.3s;
+  object-fit: contain;
+  z-index: 1;
+}
+
+.InfoContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (max-width: 570px) {
+    height: rem(160);
+  }
+}
+
+.Motive {
+  font-size: rem(10);
+  letter-spacing: rem(2.25);
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.TitleBlock {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Title {
+  font-size: rem(22);
+  text-transform: uppercase;
+  transition: 0.3s;
+
+  @media (max-width: 1030px) {
+    font-size: rem(18);
+  }
+}
+
+.Volume {
+  font-size: rem(10);
+  color: $text-gray-500;
+  transition: 0.3s;
+}
+
+.Bottom {
+  padding-top: rem(12);
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-top: rem(1) solid $text-black;
+
+  @media (max-width: 1030px) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (max-width: 900px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media (max-width: 730px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.PriceBlock {
+  display: flex;
+  align-items: center;
+  gap: rem(6);
+}
+
+.Price {
+  font-size: rem(20);
+  transition: 0.3s;
+}
+
+.OldPrice {
+  color: $text-gray-500;
+  white-space: nowrap;
+  text-decoration: line-through;
+}
+
+.CardButton {
+  justify-self: center;
+}
+
+.Stock {
+  justify-self: end;
+
+  @media (max-width: 1030px) {
+    display: none;
+  }
+
+  @media (max-width: 900px) {
+    display: block;
+  }
+
+  @media (max-width: 730px) {
+    display: none;
+  }
+}
+
+.DeleteButton {
+  padding-left: rem(8);
+  padding-bottom: rem(8);
+}

@@ -1,0 +1,28 @@
+@import "src/assets/styles/functions";
+
+.Page {
+  position: relative;
+  width: 100vw;
+  overflow-x: hidden;
+  box-shadow: 0 rem(100) rem(80) rem(20) rgba(0, 0, 0, 0.04);
+  background: $bg-white;
+  z-index: 1;
+}
+
+.Padding {
+  padding: 0 rem(20);
+}
+
+.TopPadding {
+  padding-top: rem(100);
+
+  @media (max-width: $mobile-size) {
+    padding-top: 0;
+  }
+}
+
+.Wrapper {
+  height: 100%;
+  max-width: rem(1640);
+  margin: auto;
+}

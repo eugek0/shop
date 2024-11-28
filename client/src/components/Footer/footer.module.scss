@@ -1,0 +1,142 @@
+@import "src/assets/styles/functions";
+
+.Relative {
+  position: relative;
+  z-index: 0;
+}
+
+.Show {
+  height: 100vh;
+}
+
+.Footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: -1;
+
+  @media (max-width: $mobile-size) {
+    padding-bottom: rem(80);
+    top: 0;
+  }
+}
+
+.Top, .Bottom {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Top {
+  padding: 0 rem(140);
+  height: 100%;
+  background: $bg-white;
+
+  @media (max-width: $mobile-size) {
+    flex-direction: column;
+    gap: rem(40);
+  }
+}
+
+.ImageLogoBlock {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: rem(20);
+  font-size: rem(12);
+
+  @media (max-width: $mobile-size) {
+    margin: 0;
+  }
+}
+
+.NavList {
+  display: flex;
+  flex-direction: column;
+  gap: rem(16);
+  width: rem(280);
+
+  .NavItem {
+    font-size: rem(14);
+    padding: 0;
+    text-transform: lowercase;
+  }
+
+  &:first-child {
+    .NavItem {
+      text-align: start;
+      justify-content: start;
+
+      @media (max-width: $mobile-size) {
+        display: none;
+      }
+    }
+  }
+
+  &:last-child {
+    .NavItem {
+      text-align: end;
+      justify-content: end;
+
+      @media (max-width: $mobile-size) {
+        text-align: center;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+.Bottom {
+  padding: rem(50) rem(140);
+  background: $bg-black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  @media (max-width: 1220px) {
+    padding: rem(50) rem(20);
+  }
+
+  @media (max-width: $mobile-size) {
+    display: none;
+  }
+}
+
+.TextLogo {
+  margin: auto;
+  fill: $text-white;
+  color: $text-white;
+
+  transition: 0.3s;
+
+  &:hover {
+    transform: scale(1.05, 1.05);
+  }
+}
+
+.SocialContainer {
+  width: rem(280);
+  display: flex;
+  gap: rem(32);
+
+  &:last-child {
+    justify-self: end;
+  }
+}
+
+.ImageLogo {
+  height: 100%;
+  width: rem(60);
+  transition: 0.3s;
+
+  &:hover {
+    transform: scale(1.1, 1.1);
+  }
+}
+

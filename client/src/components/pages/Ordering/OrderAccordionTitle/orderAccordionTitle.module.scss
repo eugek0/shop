@@ -1,0 +1,24 @@
+@import "../../../../assets/styles/functions";
+
+.Item {
+  display: flex;
+  align-items: center;
+  gap: rem(40);
+}
+
+.Text {
+  font-size: rem(36);
+  transition: 0.3s;
+
+  @media (max-width: 1340px) {
+    font-size: rem(24);
+  }
+}
+
+.Disabled {
+  color: $text-gray-400
+}
+
+.Filled {
+  color: $text-bronze
+}

@@ -1,0 +1,32 @@
+@import "src/assets/styles/functions";
+
+.PersonalInfoPage {
+  @media (max-width: 900px) {
+    padding: 0;
+  }
+}
+
+.Form {
+  padding-right: rem(16);
+  display: flex;
+  flex-direction: column;
+  gap: rem(24);
+  text-transform: uppercase;
+
+  @media (max-width: 900px) {
+    padding: 0 rem(20);
+  }
+}
+
+.ProfileButton {
+  width: rem(350);
+  margin-top: rem(8);
+
+  @media (max-width: 570px) {
+    align-self: center;
+  }
+
+  @media (max-width: 420px) {
+    width: 100%;
+  }
+}

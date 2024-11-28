@@ -1,0 +1,107 @@
+@import "../../assets/styles/functions";
+
+.Card {
+  height: fit-content;
+  padding: rem(18) rem(38);
+  display: flex;
+  flex-direction: column;
+  gap: rem(16);
+  font-size: rem(24);
+  line-height: rem(38.5);
+  background: $bg-gray-lighten;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  @media (max-width: 1000px) {
+    max-width: 100%;
+  }
+
+  @media (max-width: 500px) {
+    min-width: 200px;
+    padding: rem(18);
+  }
+}
+
+.Head {
+  display: flex;
+  flex-direction: column;
+}
+
+.BaseInfo {
+  display: flex;
+  justify-content: space-between;
+  gap: rem(24);
+}
+
+.Status {
+  text-transform: lowercase;
+  font-size: rem(18);
+}
+
+.OrderId {
+  font-size: rem(12);
+  color: $text-gray-500;
+  text-transform: uppercase;
+}
+
+.ImagesContainer {
+  display: flex;
+  gap: rem(14);
+  padding-bottom: rem(12);
+  overflow: auto;
+}
+
+.Image {
+  min-width: rem(116);
+  object-fit: cover;
+  background: $bg-gray;
+}
+
+.ImageContainer {
+  position: relative;
+}
+
+.Table {
+  font-size: rem(16);
+  line-height: rem(25.5);
+
+  span {
+    white-space: nowrap;
+  }
+
+  div {
+    &:last-child {
+      span {
+        color: $text-bronze
+      }
+    }
+  }
+}
+
+.PriceContainer {
+  display: flex;
+  align-items: center;
+  gap: rem(20);
+
+  @media (max-width: 560px) {
+    align-items: flex-end;
+    flex-direction: column;
+  }
+}
+
+.FinalPriceContainer {
+  min-width: rem(120);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.FinalText {
+  font-size: rem(16);
+}
+
+.FinalPrice {
+  font-size: rem(26);
+}

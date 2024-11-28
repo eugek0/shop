@@ -1,0 +1,31 @@
+@import "../../../../assets/styles/functions";
+
+.Content {
+  width: 100%;
+  padding-top: rem(32);
+  display: flex;
+  flex-direction: column;
+}
+
+.Payment {
+  width: 100%;
+  padding: rem(16) rem(8);
+  display: flex;
+  align-items: center;
+  gap: rem(12);
+  border-bottom: rem(1) solid $border-gray;
+  font-size: rem(16);
+  cursor: pointer;
+}
+
+.OrderButton {
+  padding: rem(16) 0;
+  margin-top: rem(70);
+}
+
+.Ratio {
+  width: rem(10);
+  height: rem(10);
+  background: $bg-black;
+  border-radius: 50%;
+}

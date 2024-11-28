@@ -1,0 +1,107 @@
+@import "src/assets/styles/functions";
+
+.ImagesCarousel {
+  position: relative;
+  display: flex;
+  gap: rem(24);
+}
+
+.ImageItemsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: rem(16);
+
+  @media (max-width: 1680px) {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-40%);
+    left: rem(48);
+    z-index: 2;
+  }
+}
+
+.ImageContainer {
+  width: rem(80);
+  height: rem(80);
+  position: relative;
+}
+
+.Image, .LargeImage {
+  position: absolute;
+  z-index: 1;
+  object-fit: contain;
+}
+
+.Image {
+  @media (max-width: 1680px) {
+    border: rem(1) solid $border-black;
+  }
+}
+
+.ImageLargeContainer {
+  display: flex;
+  width: rem(998);
+  height: rem(750);
+}
+
+.LargeImage {
+  width: 100%;
+  height: rem(666);
+  z-index: -2;
+  left: 50%;
+  background: $bg-gray;
+  transform: translateX(-50%);
+}
+
+.TitleContainer {
+  position: absolute;
+  top: rem(-48);
+  right: rem(-120);
+  display: flex;
+  flex-direction: column;
+  z-index: 3;
+
+  @media (max-width: 1280px) {
+    right: rem(30);
+  }
+
+  @media (max-width: 1000px) {
+    position: static;
+  }
+}
+
+.Subtitle {
+  font-size: rem(12);
+  font-weight: 600;
+}
+
+.Title {
+  font-size: rem(50);
+  font-weight: 600;
+}
+
+.ConditionsContainer, .Condition {
+  display: flex;
+  align-items: center;
+}
+
+.ConditionsContainer {
+  align-self: end;
+  padding: rem(16) rem(32);
+  gap: rem(40);
+}
+
+.Condition {
+  font-size: rem(12);
+  width: rem(200);
+  gap: rem(12);
+}
+
+.Svg {
+  min-width: rem(40);
+}
+
+.Discount {
+  left: rem(38);
+}

@@ -1,0 +1,33 @@
+@use 'sass:math';
+
+$border-black: #1d1d1d;
+$border-gray: #d8d8d8;
+$border-white: #ecf0f1;
+
+$bg-black: #000000;
+$bg-gray: #ececec;
+$bg-gray-lighten: #F9F9F9;
+$bg-white: #ffffff;
+$bg-bronze: #ac8c75;
+
+$text-black: #1d1d1d;
+$text-gray-500: #767676;
+$text-gray-400: #9b9b9b;
+$text-gray-200: #e6e6e6;
+$text-white: #ffffff;
+$text-bronze: #ac8c75;
+
+$red-rose: #c0392b;
+$blue-cristal: #04BFFB;
+
+$mobile-size: 990px;
+
+@function rem($size) {
+  @if unitless($size) {
+    $remSize: math.div($size, 16);
+
+    @return #{$remSize}rem;
+  } @else {
+    @error 'Size must be a unitless number.';
+  }
+}

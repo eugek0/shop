@@ -1,0 +1,38 @@
+@import "src/assets/styles/functions";
+
+.Form, .ConfirmForm {
+  display: flex;
+  flex-direction: column;
+  gap: rem(32);
+}
+
+.Form {
+  padding: rem(16) 0;
+}
+
+.CheckboxContainer {
+  display: flex;
+  align-items: center;
+  gap: rem(16);
+}
+
+.CheckboxText {
+  font-size: rem(12);
+}
+
+.ConfirmButton {
+  width: 100%;
+}
+
+.Top {
+  display: flex;
+  align-items: center;
+  gap: rem(16);
+  font-size: rem(14);
+}
+
+.Text {
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

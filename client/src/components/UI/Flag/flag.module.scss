@@ -1,0 +1,33 @@
+@import "src/assets/styles/functions";
+
+.Flag {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: $text-white;
+  font-weight: 600;
+  width: rem(36);
+  height: rem(36);
+  font-size: rem(10);
+}
+
+.bottom {
+  padding-bottom: rem(6);
+  align-items: flex-end;
+}
+
+.small {
+  padding-bottom: rem(0);
+  align-items: center;
+}
+
+.blue {
+  background: $blue-cristal;
+}
+
+.bronze {
+  background: $text-bronze;
+}

@@ -1,0 +1,81 @@
+@import "src/assets/styles/functions";
+
+.Button {
+  position: relative;
+  padding: rem(12) rem(24);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: rem(16);
+  border-radius: 0;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: 0.3s;
+
+  &:disabled {
+    cursor: default;
+    background: $text-gray-500;
+
+    .Text {
+      border-bottom: rem(2) solid $text-gray-500;
+    }
+
+    &:hover, &:focus {
+      .Text {
+        border-bottom: rem(2) solid $text-gray-500;
+      }
+    }
+  }
+}
+
+.Text {
+  transition: 0.3s;
+  border-bottom: 2px solid transparent;
+}
+
+.white {
+  background: #ffffff;
+
+  .Text {
+    color: #1d1d1d;
+    border-bottom: rem(2) solid transparent;
+  }
+
+  &:hover, &:focus {
+    .Text {
+      border-bottom: rem(2) solid #1d1d1d;
+    }
+  }
+}
+
+.black {
+  background: #1d1d1d;
+
+  .Text {
+    color: #ffffff;
+    border-bottom: rem(2) solid #1d1d1d;
+  }
+
+  &:hover, &:focus {
+    .Text {
+      border-bottom: rem(2) solid #ffffff;
+    }
+  }
+}
+
+.transparent {
+  background: transparent;
+
+  .Text {
+    color: #ffffff;
+    border-bottom: rem(2) solid transparent;
+  }
+
+  &:hover, &:focus {
+    .Text {
+      border-bottom: rem(2) solid #ffffff;
+    }
+  }
+}

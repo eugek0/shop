@@ -1,0 +1,39 @@
+@import "src/assets/styles/functions";
+
+.Accordion {
+  width: 100%;
+  border-bottom: rem(1) solid $text-gray-500;
+}
+
+.Item {
+  border-top: rem(1) solid $text-gray-500;
+}
+
+.Disabled {
+  pointer-events: none;
+}
+
+.Title {
+  padding: rem(16) 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: rem(16);
+  transition: 0.3s ease;
+}
+
+.TitleActive {
+  padding: rem(24) 0;
+}
+
+.Content {
+  max-height: 0;
+  padding: 0;
+  transition: 0.3s ease;
+  overflow: hidden;
+}
+
+.ContentActive {
+  max-height: rem(600);
+  padding-bottom: rem(24);
+}
