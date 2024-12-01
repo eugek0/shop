@@ -66,6 +66,9 @@
     "tiptap": "1.32.2",
     "ua-parser-js": "1.0.35"
   },
+  "resolutions": {
+    "@tiptap/core": "^2.0.1"
+  },
   "devDependencies": {
     "@nestjs/cli": "9.2.0",
     "@nestjs/schematics": "9.0.4",

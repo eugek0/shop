@@ -1,12 +1,7 @@
 # compiled output
 /dist
 /node_modules
-/uploads
-.evn.*
-.env
 yarn.lock
-docker-compose.yml
-Dockerfile
 
 # Logs
 logs

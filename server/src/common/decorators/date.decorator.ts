@@ -1,7 +1,6 @@
 import { ValidationOptions } from 'class-validator/types/decorator/ValidationOptions';
 import { i18nValidationMessage } from 'nestjs-i18n';
 import { IsDateString } from 'class-validator';
-import ValidatorJS from 'validator';
 
 /**
  * Декоратор проверяет, что переданное значение является датой стандарта ISO8601
@@ -12,7 +11,7 @@ import ValidatorJS from 'validator';
  */
 
 export const IsDate = (
-  options?: ValidatorJS.IsISO8601Options,
+  options?: any,
   validationOptions?: ValidationOptions,
 ) => {
   return IsDateString(options, {
